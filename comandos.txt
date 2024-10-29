@@ -5,3 +5,4 @@ pip install Flask pandas xgboost streamlit numpy scipy
 pip show Flask
 pip show pandas
 pip show xgboost
+python api.py
