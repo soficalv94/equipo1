@@ -1,1 +1,1 @@
-# ejecutar comandos de requirements.txt
+# ver requirements.txt
