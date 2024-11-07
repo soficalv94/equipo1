@@ -1,4 +1,1 @@
-# deteccionDeFraudeIA
-# deteccionDeFraudeIA
-# deteccionDeFraudeIA
-# deteccionDeFraudeIA
+# ejecutar comandos de requirements.txt
