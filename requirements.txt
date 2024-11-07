@@ -1,0 +1,6 @@
+Flask
+pandas
+xgboost
+streamlit
+numpy
+scipy

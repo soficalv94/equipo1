@@ -1,8 +1,0 @@
-pip install Flask pandas xgboost streamlit numpy scipy
-python -m venv mi_entorno
-mi_entorno\Scripts\activate
-pip install Flask pandas xgboost streamlit numpy scipy
-pip show Flask
-pip show pandas
-pip show xgboost
-python api.py
