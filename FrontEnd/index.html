@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Detección de Fraude en Aperturas de Cuentas</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Detección de Fraude en Aperturas de Cuentas</h1>
@@ -13,16 +15,20 @@
             <label for="income">Ingreso Anual (en cuantiles)<span style="color: #ffc0cb;"> (income)</span></label>
             <input type="number" id="income" min="0" max="1" step="0.01" required>
 
-            <label for="name_email_similarity">Similitud entre Nombre y Email<span style="color: #ffc0cb;"> (name_email_similarity)</span></label>
+            <label for="name_email_similarity">Similitud entre Nombre y Email<span style="color: #ffc0cb;">
+                    (name_email_similarity)</span></label>
             <input type="number" id="name_email_similarity" min="0" max="1" step="0.01" required>
 
-            <label for="prev_address_months_count">Meses en Dirección Anterior<span style="color: #ffc0cb;"> (prev_address_months_count)</span></label>
+            <label for="prev_address_months_count">Meses en Dirección Anterior<span style="color: #ffc0cb;">
+                    (prev_address_months_count)</span></label>
             <input type="number" id="prev_address_months_count" min="-1" max="380" required>
 
-            <label for="current_address_months_count">Meses en Dirección Actual<span style="color: #ffc0cb;"> (current_address_months_count)</span></label>
+            <label for="current_address_months_count">Meses en Dirección Actual<span style="color: #ffc0cb;">
+                    (current_address_months_count)</span></label>
             <input type="number" id="current_address_months_count" min="-1" max="406" required>
 
-            <label for="customer_age">Edad del Solicitante (por década)<span style="color: #ffc0cb;"> (customer_age)</span></label>
+            <label for="customer_age">Edad del Solicitante (por década)<span style="color: #ffc0cb;">
+                    (customer_age)</span></label>
             <select id="customer_age" required>
                 <option value="20">20</option>
                 <option value="30">30</option>
@@ -31,22 +37,25 @@
                 <option value="60">60</option>
             </select>
 
-            <label for="days_since_request">Días Desde la Solicitud<span style="color: #ffc0cb;"> (days_since_request)</span></label>
+            <label for="days_since_request">Días Desde la Solicitud<span style="color: #ffc0cb;">
+                    (days_since_request)</span></label>
             <input type="number" id="days_since_request" min="0" max="78" required>
 
-            <label for="intended_balcon_amount">Monto de Transferencia Inicial<span style="color: #ffc0cb;"> (intended_balcon_amount)</span></label>
+            <label for="intended_balcon_amount">Monto de Transferencia Inicial<span style="color: #ffc0cb;">
+                    (intended_balcon_amount)</span></label>
             <input type="number" id="intended_balcon_amount" min="-1" max="108" required>
 
             <label for="payment_type">Tipo de Pago<span style="color: #ffc0cb;"> (payment_type)</span></label>
             <select id="payment_type" required>
-                <option value="1">Tipo 1</option>
-                <option value="2">Tipo 2</option>
-                <option value="3">Tipo 3</option>
-                <option value="4">Tipo 4</option>
-                <option value="5">Tipo 5</option>
+                <option value="1">AA</option>
+                <option value="2">AB</option>
+                <option value="3">AC</option>
+                <option value="4">AD</option>
+                <option value="5">AE</option>
             </select>
 
-            <label for="zip_count_4w">Aplicaciones en el Código Postal (4 semanas)<span style="color: #ffc0cb;"> (zip_count_4w)</span></label>
+            <label for="zip_count_4w">Aplicaciones en el Código Postal (4 semanas)<span style="color: #ffc0cb;">
+                    (zip_count_4w)</span></label>
             <input type="number" id="zip_count_4w" min="1" max="5767" required>
 
             <label for="velocity_6h">Velocidad (6h)<span style="color: #ffc0cb;"> (velocity_6h)</span></label>
@@ -58,24 +67,28 @@
             <label for="velocity_4w">Velocidad (4w)<span style="color: #ffc0cb;"> (velocity_4w)</span></label>
             <input type="number" id="velocity_4w" required>
 
-            <label for="bank_branch_count_8w">Conteo de Sucursales (8 semanas)<span style="color: #ffc0cb;"> (bank_branch_count_8w)</span></label>
+            <label for="bank_branch_count_8w">Conteo de Sucursales (8 semanas)<span style="color: #ffc0cb;">
+                    (bank_branch_count_8w)</span></label>
             <input type="number" id="bank_branch_count_8w" min="0" max="2521" required>
 
-            <label for="date_of_birth_distinct_emails_4w">Emails Distintos (4 semanas)<span style="color: #ffc0cb;"> (date_of_birth_distinct_emails_4w)</span></label>
+            <label for="date_of_birth_distinct_emails_4w">Emails Distintos (4 semanas)<span style="color: #ffc0cb;">
+                    (date_of_birth_distinct_emails_4w)</span></label>
             <input type="number" id="date_of_birth_distinct_emails_4w" min="0" max="42" required>
 
-            <label for="employment_status">Estado Laboral<span style="color: #ffc0cb;"> (employment_status)</span></label>
+            <label for="employment_status">Estado Laboral<span style="color: #ffc0cb;">
+                    (employment_status)</span></label>
             <select id="employment_status" required>
-                <option value="1">Estado 1</option>
-                <option value="2">Estado 2</option>
-                <option value="3">Estado 3</option>
-                <option value="4">Estado 4</option>
-                <option value="5">Estado 5</option>
-                <option value="6">Estado 6</option>
-                <option value="7">Estado 7</option>
+                <option value="1">CA</option>
+                <option value="2">CB</option>
+                <option value="3">CC</option>
+                <option value="4">CD</option>
+                <option value="5">CE</option>
+                <option value="6">CF</option>
+                <option value="7">CG</option>
             </select>
 
-            <label for="credit_risk_score">Puntuación de Riesgo Crediticio<span style="color: #ffc0cb;"> (credit_risk_score)</span></label>
+            <label for="credit_risk_score">Puntuación de Riesgo Crediticio<span style="color: #ffc0cb;">
+                    (credit_risk_score)</span></label>
             <input type="number" id="credit_risk_score" min="-176" max="387" required>
 
             <label for="email_is_free">Email Gratis<span style="color: #ffc0cb;"> (email_is_free)</span></label>
@@ -86,40 +99,46 @@
 
             <label for="housing_status">Estado de Vivienda<span style="color: #ffc0cb;"> (housing_status)</span></label>
             <select id="housing_status" required>
-                <option value="1">Estado 1</option>
-                <option value="2">Estado 2</option>
-                <option value="3">Estado 3</option>
-                <option value="4">Estado 4</option>
-                <option value="5">Estado 5</option>
-                <option value="6">Estado 6</option>
-                <option value="7">Estado 7</option>
+                <option value="1">BA</option>
+                <option value="2">BB</option>
+                <option value="3">BC</option>
+                <option value="4">BD</option>
+                <option value="5">BE</option>
+                <option value="6">BF</option>
+                <option value="7">BG</option>
             </select>
 
-            <label for="phone_home_valid">Teléfono Casa Válido<span style="color: #ffc0cb;"> (phone_home_valid)</span></label>
+            <label for="phone_home_valid">Teléfono Casa Válido<span style="color: #ffc0cb;">
+                    (phone_home_valid)</span></label>
             <select id="phone_home_valid" required>
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
 
-            <label for="phone_mobile_valid">Teléfono Móvil Válido<span style="color: #ffc0cb;"> (phone_mobile_valid)</span></label>
+            <label for="phone_mobile_valid">Teléfono Móvil Válido<span style="color: #ffc0cb;">
+                    (phone_mobile_valid)</span></label>
             <select id="phone_mobile_valid" required>
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
 
-            <label for="bank_months_count">Meses de Cuenta Anterior<span style="color: #ffc0cb;"> (bank_months_count)</span></label>
+            <label for="bank_months_count">Meses de Cuenta Anterior<span style="color: #ffc0cb;">
+                    (bank_months_count)</span></label>
             <input type="number" id="bank_months_count" min="-1" max="31" required>
 
-            <label for="has_other_cards">¿Tiene Otras Tarjetas?<span style="color: #ffc0cb;"> (has_other_cards)</span></label>
+            <label for="has_other_cards">¿Tiene Otras Tarjetas?<span style="color: #ffc0cb;">
+                    (has_other_cards)</span></label>
             <select id="has_other_cards" required>
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
 
-            <label for="proposed_credit_limit">Límite de Crédito Propuesto<span style="color: #ffc0cb;"> (proposed_credit_limit)</span></label>
+            <label for="proposed_credit_limit">Límite de Crédito Propuesto<span style="color: #ffc0cb;">
+                    (proposed_credit_limit)</span></label>
             <input type="number" id="proposed_credit_limit" min="200" max="2000" required>
 
-            <label for="foreign_request">Solicitud Extranjera<span style="color: #ffc0cb;"> (foreign_request)</span></label>
+            <label for="foreign_request">Solicitud Extranjera<span style="color: #ffc0cb;">
+                    (foreign_request)</span></label>
             <select id="foreign_request" required>
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
@@ -127,42 +146,44 @@
 
             <label for="source">Fuente de Solicitud<span style="color: #ffc0cb;"> (source)</span></label>
             <select id="source" required>
-                <option value="internet">Internet</option>
-                <option value="app">App</option>
+                <option value="1">Internet</option>
+                <option value="2">App</option>
             </select>
 
-            <label for="session_length_in_minutes">Duración de Sesión (minutos)<span style="color: #ffc0cb;"> (session_length_in_minutes)</span></label>
+            <label for="session_length_in_minutes">Duración de Sesión (minutos)<span style="color: #ffc0cb;">
+                    (session_length_in_minutes)</span></label>
             <input type="number" id="session_length_in_minutes" min="-1" max="107" required>
 
             <label for="device_os">Sistema Operativo<span style="color: #ffc0cb;"> (device_os)</span></label>
             <select id="device_os" required>
-                <option value="Windows">Windows</option>
-                <option value="Macintox">Macintox</option>
-                <option value="Linux">Linux</option>
-                <option value="X11">X11</option>
-                <option value="Otro">Otro</option>
+                <option value="4">Windows</option>
+                <option value="2">Macintox</option>
+                <option value="1">Linux</option>
+                <option value="5">X11</option>
+                <option value="3">Otro</option>
             </select>
 
-            <label for="keep_alive_session">¿Mantener Sesión Activa?<span style="color: #ffc0cb;"> (keep_alive_session)</span></label>
+            <label for="keep_alive_session">¿Mantener Sesión Activa?<span style="color: #ffc0cb;">
+                    (keep_alive_session)</span></label>
             <select id="keep_alive_session" required>
                 <option value="yes">Sí</option>
                 <option value="no">No</option>
             </select>
 
-            <label for="device_distinct_emails_8w">Emails Distintos en Dispositivo (8 semanas)<span style="color: #ffc0cb;"> (device_distinct_emails_8w)</span></label>
+            <label for="device_distinct_emails_8w">Emails Distintos en Dispositivo (8 semanas)<span
+                    style="color: #ffc0cb;"> (device_distinct_emails_8w)</span></label>
             <input type="number" id="device_distinct_emails_8w" min="0" max="3" required>
-
-            <label for="device_fraud_count">Conteo de Fraude por Dispositivo<span style="color: #ffc0cb;"> (device_fraud_count)</span></label>
-            <input type="number" id="device_fraud_count" min="0" max="1" required>
 
             <label for="month">Mes de Solicitud<span style="color: #ffc0cb;"> (month)</span></label>
             <input type="number" id="month" min="0" max="7" required>
 
             <button type="submit">Predecir Fraude</button>
-			<button type="button" id="fill-random" style="background-color: #008CBA">Rellenar con Datos Aleatorios</button>
+            <button type="button" id="fill-random" style="background-color: #008CBA">Rellenar con Datos
+                Aleatorios</button>
         </form>
         <div id="result" class="result"></div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
